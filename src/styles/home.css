@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: url('../../public/img/bg.jpg');
+    background: url('../img/bg.jpg');
     font-family: 'Baloo Tamma 2', cursive;
 }
 

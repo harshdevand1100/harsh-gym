@@ -1,11 +1,33 @@
+import '../styles/home.css'
 import React from 'react'
-
+import Text from "./text";
 const Home = () =>{
     return(
-        <div>
-            <h1>Hello!</h1>
+        <body>
+        <header class="header">
+            <div class="left">
+                <img src={'../img/h.jpg'}/>
+                    <div>HARSH FITNESS</div>
+            </div>
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Images</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <button class="btn">Sign Up </button>
+                <button class="btn">Email Us</button>
+            </div>
+        </header>
+        <div style={{border:'1px solid blue'}}>
+            <Text />
         </div>
-    )
+
+    </body>
+)
 }
 
 export default Home
