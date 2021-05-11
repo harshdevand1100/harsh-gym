@@ -1,9 +1,10 @@
 import '../styles/home.css'
 import React from 'react'
 import Text from "./text";
+const myUrl = new URL('/home/shubham/learning/harsh-gym/src/img/bg.jpg')
 const Home = () =>{
     return(
-        <body>
+        <body style={{background: myUrl} }>
         <header class="header">
             <div class="left">
                 <img src={'../img/h.jpg'}/>
@@ -22,9 +23,9 @@ const Home = () =>{
                 <button class="btn">Email Us</button>
             </div>
         </header>
-        <div style={{border:'1px solid blue'}}>
-            <Text />
-        </div>
+        {/*<div>*/}
+        {/*    <Text />*/}
+        {/*</div>*/}
 
     </body>
 )
