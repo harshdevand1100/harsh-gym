@@ -1,34 +1,50 @@
 import '../styles/home.css'
 import React from 'react'
-import Text from "./text";
-const myUrl = new URL('/home/shubham/learning/harsh-gym/src/img/bg.jpg')
+// import Text from "./Text.jsx";
+// import Gallery from "./Gallery";
+// import About from "./About"
+// import Calculator from "./FitnessCalculator";
+import {Link,BrowserRouter as Router} from 'react-router-dom'
+// import {Switch,Route} from 'react-router'
+// import TextTwo from "./TextTwo.jsx";
+// const myUrl = new URL('/home/shubham/learning/harsh-gym/src/img/bg.jpg')
 const Home = () =>{
     return(
-        <body style={{background: myUrl} }>
-        <header class="header">
-            <div class="left">
-                <img src={'../img/h.jpg'}/>
-                    <div>HARSH FITNESS</div>
-            </div>
-            <div class="mid">
-                <ul class="navbar">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Images</a></li>
-                    <li><a href="#">Fitness Calculator</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul>
-            </div>
-            <div class="right">
-                <button class="btn">Sign Up </button>
-                <button class="btn">Email Us</button>
-            </div>
-        </header>
-        {/*<div>*/}
-        {/*    <Text />*/}
-        {/*</div>*/}
+        <body>
+            <body style={{backgroundImage: "url(" + "../img/bg.jpg" + ")",height:'100vh'}}>
 
-    </body>
-)
+            <header className="header">
+                <div className="left">
+                    <img src={'../img/h.jpg'}/>
+                    <div>HARSH FITNESS</div>
+                </div>
+                <div class="mid">
+                    <ul class="navbar">
+                        <>
+                            <li><a  className="active">Home</a></li>
+                            <li><a  >Gallery</a></li>
+                            <li><a   >Fitness Calculator</a></li>
+                            <li><Link to='/about'   >About us</Link></li>
+
+                        </>
+
+                    </ul>
+
+                </div>
+                <div className="right">
+                    <button className="btn">Sign Up </button>
+                    <button
+                        onClick={()=>{
+                            //api call
+                            //change to the contact page
+                        }}
+
+                        className="btn">Email Us</button>
+                </div>
+            </header>
+            </body>
+        </body>
+    )
 }
 
 export default Home
