@@ -8,7 +8,9 @@ import {Link,BrowserRouter as Router} from 'react-router-dom'
 // import {Switch,Route} from 'react-router'
 // import TextTwo from "./TextTwo.jsx";
 // const myUrl = new URL('/home/shubham/learning/harsh-gym/src/img/bg.jpg')
-const Home = () =>{
+import Contact from "./ContactUs";
+const Home = (props) =>{
+    console.log(props.location)
     return(
         <body>
             <body style={{backgroundImage: "url(" + "../img/bg.jpg" + ")",height:'100vh'}}>
@@ -25,6 +27,7 @@ const Home = () =>{
                             <li><a  >Gallery</a></li>
                             <li><a   >Fitness Calculator</a></li>
                             <li><Link to='/about'   >About us</Link></li>
+                            <li><Link to='/equipments'   >Equipment</Link></li>
 
                         </>
 
@@ -37,6 +40,7 @@ const Home = () =>{
                         onClick={()=>{
                             //api call
                             //change to the contact page
+                            props.history.push('/contact')
                         }}
 
                         className="btn">Email Us</button>
