@@ -12,8 +12,8 @@ import Contact from "./ContactUs";
 const Home = (props) =>{
     console.log(props.location)
     return(
-        <body>
-            <body style={{backgroundImage: "url(" + "../img/bg.jpg" + ")",height:'100vh'}}>
+        <body >
+            <body >
 
             <header className="header">
                 <div className="left">

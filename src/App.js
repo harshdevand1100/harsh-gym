@@ -200,7 +200,7 @@ const App = () =>{
                 <Route path="/about" exact component={About} />
                 <Route path="/contact" exact component={Contact} />
                 {/*<Route path="/equipments" exact component={Equipment} />*/}
-                <Route path="/equipments/:id" exact component={Equipment} />
+                {/*<Route path="/equipments/:id" exact component={Equipment} />*/}
                 <Route path='*' render={() =><div style={{color:'white'}}>404 not found</div> } />
             </Switch>
         </BrowserRouter>
