@@ -8,7 +8,8 @@ import {Link,BrowserRouter as Router} from 'react-router-dom'
 // import {Switch,Route} from 'react-router'
 // import TextTwo from "./TextTwo.jsx";
 // const myUrl = new URL('/home/shubham/learning/harsh-gym/src/img/bg.jpg')
-import Contact from "./ContactUs";
+//import Contact from "./ContactUs";
+import Facebook from "./fblogin";
 const Home = (props) =>{
     console.log(props.location)
     return(
@@ -23,11 +24,11 @@ const Home = (props) =>{
                 <div class="mid">
                     <ul class="navbar">
                         <>
-                            <li><a  className="active">Home</a></li>
-                            <li><a  >Gallery</a></li>
-                            <li><a   >Fitness Calculator</a></li>
+                            <li><Link  className="active">Home</Link></li>
+                            <li><Link to='/gallery'  >Gallery</Link></li>
+                            <li><Link to='/calculator'  >Fitness Calculator</Link></li>
                             <li><Link to='/about'   >About us</Link></li>
-                            <li><Link to='/equipments'   >Equipment</Link></li>
+                            {/*<li><Link to='/equipments'   >Equipment</Link></li>*/}
 
                         </>
 
@@ -35,7 +36,8 @@ const Home = (props) =>{
 
                 </div>
                 <div className="right">
-                    <button className="btn">Sign Up </button>
+                    {/*<button className="btn">Sign Up </button>*/}
+
                     <button
                         onClick={()=>{
                             //api call
@@ -43,9 +45,10 @@ const Home = (props) =>{
                             props.history.push('/contact')
                         }}
 
-                        className="btn">Email Us</button>
+                        className="btn">Contact</button>
                 </div>
             </header>
+             <div style={{margin:'auto',width:'50%'}}><Facebook /></div>
             </body>
         </body>
     )

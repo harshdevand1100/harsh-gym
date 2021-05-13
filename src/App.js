@@ -191,7 +191,9 @@ import {BrowserRouter, Route,Switch} from "react-router-dom";
 import Home from './components/Home'
 import About from "./components/About"
 import Contact from "./components/ContactUs";
-import Equipment from "./components/Equipment"
+import Gallery from "./components/Gallery";
+import Calculator from "./components/FitnessCalculator";
+// import Equipment from "./components/Equipment"
 const App = () =>{
     return(
         <BrowserRouter>
@@ -199,6 +201,9 @@ const App = () =>{
                 <Route path="/" exact component={Home} />
                 <Route path="/about" exact component={About} />
                 <Route path="/contact" exact component={Contact} />
+                <Route path="/gallery" exact component={Gallery} />
+                <Route path="/calculator" exact component={Calculator} />
+
                 {/*<Route path="/equipments" exact component={Equipment} />*/}
                 {/*<Route path="/equipments/:id" exact component={Equipment} />*/}
                 <Route path='*' render={() =><div style={{color:'white'}}>404 not found</div> } />
