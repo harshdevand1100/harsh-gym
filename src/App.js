@@ -196,6 +196,7 @@ import Calculator from "./components/FitnessCalculator";
 // import Equipment from "./components/Equipment"
 const App = () =>{
     return(
+
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Home} />
@@ -207,6 +208,7 @@ const App = () =>{
                 {/*<Route path="/equipments" exact component={Equipment} />*/}
                 {/*<Route path="/equipments/:id" exact component={Equipment} />*/}
                 <Route path='*' render={() =><div style={{color:'white'}}>404 not found</div> } />
+
             </Switch>
         </BrowserRouter>
     )

@@ -48,6 +48,9 @@ const Home = (props) =>{
                         className="btn">Contact</button>
                 </div>
             </header>
+            <div >
+                 </div>
+
              <div style={{margin:'auto',width:'50%'}}><Facebook /></div>
             </body>
         </body>
