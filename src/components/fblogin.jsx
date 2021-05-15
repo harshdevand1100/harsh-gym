@@ -10,6 +10,7 @@ class Facebook extends Component{
         picture: ''
 
     }
+    let this.valuesOne = {}
     responseFacebook = (response) => {
         console.log(response)
         this.setState({
@@ -18,10 +19,13 @@ class Facebook extends Component{
             name: response.name,
             email: response.email,
             picture: response.picture.data.url
+        }, () => {
+            sessionStorage.setItem(state, this.state)
         })
-    }
 
-    componentClicked = () => console.log("clicked!")
+    }
+     // const var = sessionStorage.getItem(state)
+    componentClicked = () => console.log("clicked!",state.userID)
 
     render() {
         let fbContent;

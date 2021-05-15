@@ -59,7 +59,10 @@ export default function Calculator () {
 
 
     return (
-        <div style={{margin:'auto',width:'50%',color:'white'}}>
+        <div style={{
+            margin:'auto',
+            width:'50%',
+            color:'white'}}>
             <h1 style={{color:'white'}}>Fitness Calculator!</h1>
             <h2>Get to know how fit you are!</h2>
             {/*<form >*/}
